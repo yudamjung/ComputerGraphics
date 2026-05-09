@@ -3,6 +3,7 @@ using UnityEngine;
 public class ArrowController : MonoBehaviour
 {
     GameObject player;
+    public float fallSpeed = 0.1f; // 외부에서 설정할 수 있도록 public으로 변경
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,8 +14,8 @@ public class ArrowController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // 프레임마다 등속으로 낙하시킨다
-        transform.Translate(0, -0.1f, 0);
+        // 프레임마다 낙하시킨다 (fallSpeed 변수 사용)
+        transform.Translate(0, -fallSpeed, 0);
 
         // 화면 밖으로 나오면 오브젝트를 소멸시킨다.
         if (transform.position.y < -5.0f)
