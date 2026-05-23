@@ -107,4 +107,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# 과제 제출용
+*.zip
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,unity
