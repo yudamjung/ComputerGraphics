@@ -93,3 +93,7 @@ Thumbs.db
 
 # Output folders
 /outputs/
+
+# Project notes (local development)
+CLAUDE.md
+DarkMazePlan.md
